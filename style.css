@@ -21,7 +21,7 @@ width: 50% !important;
 
 /*Container*/
 .cup{
-  display: flex;
+display: flex;
   justify-content: space-between;
 }
 .left-sidebar{
@@ -30,6 +30,19 @@ width: 50% !important;
   position: sticky;
   top: 70px;
   align-self: flex-start;
+}
+@media only screen and (max-width: 700px){
+  .left-sidebar{
+    display: none;
+  }
+ 
+  .main-content {
+    flex-basis: 100%;
+}
+.cup{
+  justify-content: space-between;
+  display:!important ;
+}
 }
 .main-content{
   flex-basis: 75%;
